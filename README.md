@@ -192,9 +192,9 @@ spotter-routing/
 | Sprint | Status | Description |
 |---|---|---|
 | 0 | ✅ Done | Repo scaffold, CI, health endpoint, .gitignore |
-| 1 | 🔜 Next | Risk engine, checkpoint pipeline, boundary tests |
-| 2 | ⏳ | Provider adapters + route-analysis API |
-| 3 | ⏳ | React UI (form, map, panels, slider) |
+| 1 | ✅ Done | Risk engine, checkpoint pipeline, boundary tests |
+| 2 | ✅ Done | Provider adapters (geocoding, routing, weather) + route-analysis API |
+| 3 | 🔜 Next | React UI (form, map, panels, slider) |
 | 4 | ⏳ | Integration, E2E tests, accessibility |
 | 5 | ⏳ | Deployment, hardening, walkthrough |
 

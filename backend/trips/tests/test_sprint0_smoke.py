@@ -1,7 +1,5 @@
-"""Sprint 0 smoke tests — verify the app boots and health endpoint works."""
-import pytest
+"""Smoke tests — verify the app boots and health endpoint works."""
 from django.test import TestCase
-from django.urls import reverse
 
 
 class TestHealthEndpoint(TestCase):
@@ -16,15 +14,3 @@ class TestHealthEndpoint(TestCase):
         assert "providers" in data
         for provider in ("geocoding", "routing", "weather"):
             assert provider in data["providers"]
-
-    def test_route_analysis_stub_returns_501(self):
-        response = self.client.post(
-            "/api/v1/trips/route-analysis",
-            data={},
-            content_type="application/json",
-        )
-        assert response.status_code == 501
-        data = response.json()
-        assert data["error"]["code"] == "NOT_IMPLEMENTED"
-        assert "request_id" in data["error"]
-

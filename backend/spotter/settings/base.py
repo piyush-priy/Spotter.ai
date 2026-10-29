@@ -9,7 +9,10 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+SECRET_KEY = os.environ.get(
+    "DJANGO_SECRET_KEY",
+    "spotter-dev-secret-key-fallback-for-testing-only-12345"
+)
 
 INSTALLED_APPS = [
     "django.contrib.staticfiles",

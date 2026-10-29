@@ -178,3 +178,4 @@ def rank_routes(routes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         r["rationale"] = generate_ranking_rationale(r, rank, len(sorted_routes))
 
     return sorted_routes
+

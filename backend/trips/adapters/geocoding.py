@@ -97,3 +97,4 @@ async def geocode_location(query: str, client: Optional[httpx.AsyncClient] = Non
     finally:
         if owns_client:
             await client.aclose()
+

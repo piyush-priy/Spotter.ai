@@ -152,5 +152,6 @@ temp/
 *.ipynb
 
 # PDFs & local docs (keep SRS in repo intentionally — remove if preferred)
-# *.pdf
-
+*.pdf
+IMPLEMENTATION_PLAN.md
+Spotter_Weather_Aware_Truck_Routing.md
