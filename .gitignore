@@ -1,0 +1,156 @@
+p
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ─────────────────────────────────────────
+# PYTHON / DJANGO (backend/)
+# ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env.bak/
+backend/.venv/
+backend/venv/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/backend/staticfiles/
+/backend/mediafiles/
+/backend/.cache/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+junit*.xml
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ─────────────────────────────────────────
+# NODE / REACT (frontend/)
+# ─────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/build/
+frontend/.vite/
+dist/
+build/
+
+# Vite / cache
+.vite/
+*.local
+
+# Testing
+frontend/coverage/
+frontend/.vitest/
+playwright-report/
+test-results/
+blob-report/
+
+# Package managers
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ─────────────────────────────────────────
+# IDEs & EDITORS
+# ─────────────────────────────────────────
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.project
+.classpath
+.factorypath
+*.code-workspace
+
+# ─────────────────────────────────────────
+# OS FILES
+# ─────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────
+# MISC
+# ─────────────────────────────────────────
+*.bak
+*.tmp
+*.orig
+*.patch
+*.diff
+*.log
+logs/
+tmp/
+temp/
+
+# Deployment artifacts
+*.zip
+*.tar.gz
+*.tgz
+
+# Jupyter / notebooks (if used for analysis)
+.ipynb_checkpoints/
+*.ipynb
+
+# PDFs & local docs (keep SRS in repo intentionally — remove if preferred)
+# *.pdf
+
